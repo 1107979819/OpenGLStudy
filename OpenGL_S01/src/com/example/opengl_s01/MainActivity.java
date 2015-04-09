@@ -11,7 +11,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 /**
- * OpenGL ÈëÃÅÑ§Ï°£¬Á·Ï°01£¬OpenGL»ù±¾¿ò¼Ü
+ * OpenGL å…¥é—¨å­¦ä¹ ï¼Œç»ƒä¹ 01ï¼ŒOpenGLåŸºæœ¬æ¡†æ¶
  * @author WYL
  *
  */
@@ -35,33 +35,33 @@ public class MainActivity extends Activity {
 	}
 	class MyRenderer implements Renderer{
 
-		//»æÍ¼
+		//ç»˜å›¾
 		public void onDrawFrame(GL10 gl) {
 			// TODO Auto-generated method stub
 			
 		}
 
-		//±í²ãsize¸Ä±äÊ±µ÷ÓÃ
+		//è¡¨å±‚sizeæ”¹å˜æ—¶è°ƒç”¨
 		public void onSurfaceChanged(GL10 gl, int width, int height) {
-			//µÚÒ»´Î±í²ã´´½¨Ê±£¬±í²ãµÄ´óĞ¡¸Ä±ä£¬»áµ÷ÓÃ±¾º¯Êı
+			//ç¬¬ä¸€æ¬¡è¡¨å±‚åˆ›å»ºæ—¶ï¼Œè¡¨å±‚çš„å¤§å°æ”¹å˜ï¼Œä¼šè°ƒç”¨æœ¬å‡½æ•°
 			
-			//ÉèÖÃÊÓ¿Ú
+			//è®¾ç½®è§†å£
 			//glViewport(x, y, width, height)
-			//x,yÎª×ø±ê£¬ÆÁÄ»µÄ×óÏÂ½ÇÎªÔ­µã£¨0,0£©
-			//width, heightÎª¸ÃÊÓ¿ÚµÄ¿íºÍ¸ß
+			//x,yä¸ºåæ ‡ï¼Œå±å¹•çš„å·¦ä¸‹è§’ä¸ºåŸç‚¹ï¼ˆ0,0ï¼‰
+			//width, heightä¸ºè¯¥è§†å£çš„å®½å’Œé«˜
 			gl.glViewport(0,0, width, height);
 			
-			//ÉèÖÃÆ½½ØÍ·Ìå
+			//è®¾ç½®å¹³æˆªå¤´ä½“
 			//gl.glFrustumf(left, right, bottom, top, zNear, zFar)
-			//left, right, bottom, topÎª
+			//left, right, bottom, topä¸º
 			//zNear, zFar
 			//gl.glFrustumf(left, right, bottom, top, zNear, zFar);
 			
 		}
 
-		//±í²ã´´½¨
+		//è¡¨å±‚åˆ›å»º
 		public void onSurfaceCreated(GL10 gl, EGLConfig config) {
-			//ÉèÖÃÇåÆÁÉ«£¬¼´±³¾°É«
+			//è®¾ç½®æ¸…å±è‰²ï¼Œå³èƒŒæ™¯è‰²
 			gl.glClearColor(255, 0, 0, 1);
 			
 		}
