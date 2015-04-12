@@ -1,3 +1,4 @@
 # OpenGLStudy
-OpenGL入门学习笔记
+OpenGL入门学习笔记。
+
 
